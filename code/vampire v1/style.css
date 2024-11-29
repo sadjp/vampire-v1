@@ -1,0 +1,60 @@
+@font-face {
+    font-family: "cormorant";
+    src: url(./assets/imgs/CormorantUnicase-Medium.ttf);
+}
+
+:root {
+    --noirtrans: rgba(0, 0, 0, 0.525);
+    --dore: rgb(169, 135, 62); 
+    --navy: rgba(20, 25, 35);
+    --ivory: rgb(225, 209, 179); 
+}
+
+body {
+    background: url(./assets/imgs/bg4.jpg) center/cover;
+    background-size: auto;
+    font-family: "cormorant";
+    color: var(--ivory);
+   
+}
+
+h1 {
+    font-size: 4rem;
+    letter-spacing: 5px;
+    text-shadow: 3px 3px 3px black;
+    text-align: center;
+    color: var(--dore);
+}
+
+p {
+    padding: 5px;
+    margin: 5px;
+}
+
+.boxstyle {
+    background: var(--noirtrans);
+    margin: 5px;
+}
+
+.boxdeux {
+    display: flex;
+}
+
+.clanstyle {
+    display: grid;
+    grid-template-columns: 15% 80%;
+    margin: 5px;
+    background: rgba(169, 135, 62, 0.551);
+    padding: 5px;
+}
+
+
+.clanstyle img {
+max-width: 100%;   
+min-width: 50px;
+min-height: 50px; 
+max-height: 150px;
+margin: auto;
+
+}
+
