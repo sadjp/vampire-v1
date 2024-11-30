@@ -16,6 +16,7 @@ body {
     background-size: auto;
     font-family: "cormorant";
     color: var(--ivory);
+    text-align: justify;
    
 }
 
@@ -40,6 +41,20 @@ p {
 .boxstyle {
     background: var(--noirtrans);
     margin: 5px;
+    padding: 10px;
+}
+
+.highlight {
+    color: var(--dore);
+    font-weight: bold;
+}
+
+.highlight2 {
+    color: var(--dore);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 h2 {
@@ -48,6 +63,21 @@ h2 {
     text-align: center;
     text-shadow: 3px 3px 3px black;
 }
+
+.reglesdisciplines {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+ul {
+    padding: 0;
+    margin: 0px;
+}
+
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;}
 
 .sectes {
     display: grid;
