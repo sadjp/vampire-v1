@@ -4,7 +4,7 @@
 }
 
 :root {
-    --noirtrans: rgba(0, 0, 0, 0.525);
+    --noirtrans: rgba(0, 0, 0, 0.716);
     --dore: rgb(169, 135, 62); 
     --navy: rgba(20, 25, 35);
     --ivory: rgb(225, 209, 179); 
@@ -17,6 +17,9 @@ body {
     font-family: "cormorant";
     color: var(--ivory);
     text-align: justify;
+    line-height: 120%;
+    padding-left: 4%;
+    padding-right: 4%;
    
 }
 
@@ -40,7 +43,7 @@ p {
 
 .boxstyle {
     background: var(--noirtrans);
-    margin: 5px;
+    margin: 10px;
     padding: 10px;
 }
 
@@ -55,6 +58,11 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.highlight3 {
+    color: black;
+    font-weight: bold;
 }
 
 h2 {
@@ -127,15 +135,11 @@ li {
 }
 
 
-/*.boxdeux {
-    display: flex;
-    }*/
-
 
 .clanstyle {
     display: grid;
     grid-template-columns: 15% 80%;
-    margin: 5px;
+    margin-top: 15px;
     background: rgba(169, 135, 62, 0.551);
     padding: 5px;
     position: relative;
@@ -173,4 +177,60 @@ margin: auto;
 
 .logofaction img {
     height: 60px;
+}
+
+/*responsive*/ 
+
+@media screen and (max-width:1100px) {
+    .sectes {
+        display: block;
+    }
+    .reglesdisciplines {
+        display: block;
+    }
+}
+
+@media screen and (max-width:900px) {
+    h1 {
+        line-height: 50px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    body {
+        padding-left: 2%;
+        padding-right: 3%;
+    }
+    h1 {
+        font-size: 10vw;
+    }
+    #camarilla, #anarchs, #sabbat, #independants {
+        display: block;
+    }
+    #camarilla img, #anarchs img, #sabbat img, #independants img {
+        display: flex;
+        align-items: center;
+        max-height: 80px;
+    }
+
+    #ventrue, #toreadors, #tremere, #nosferatu, #banuhakim, #brujah, #gangrel, #malkav, #lasombra, #tzimisc, #ravnos, #salub, #hecata {
+        display: flex;
+        flex-direction: column;
+    } 
+    .logofaction {
+        top: 20px;
+        transform: translate(-50%, 0);
+    }
+}
+
+@media screen and (max-width: 350px) {
+    h1 {
+        line-height: normal;
+    }
+    .clanpics img {
+        max-height: 90px;
+    }
+    .logofaction img {
+        max-height: 50px;
+    }
 }
